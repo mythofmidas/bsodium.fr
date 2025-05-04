@@ -12,7 +12,6 @@ export const architecture: RouteObject[] = [
     element: (
       <>
         <AnalyticsBanner />
-        <Copyright />
         <NavigationBar>
           <Outlet />
         </NavigationBar>

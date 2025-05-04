@@ -1,7 +1,7 @@
 import { Avatar, Stack, Typography, useColorScheme } from "@mui/joy";
 import { useMemo } from "react";
-import vader from "@/assets/vader.webp";
-import vaderMin from "@/assets/vader.min.webp";
+import vader from "@/components/utils/123.svg";
+import vaderMin from "@/components/utils/123.svg";
 import { RiOpenSourceLine } from "react-icons/ri";
 import { Parallax } from "react-scroll-parallax";
 import ProgressiveImage from "@/components/ProgressiveImage";
@@ -39,7 +39,7 @@ export default function OpenSource() {
       <Stack
         sx={{
           width: "100%",
-          height: mobile ? "45rem" : "400px",
+          height: mobile ? "45rem" : "900px",
           // overflow: 'hidden',
         }}
       >
@@ -92,33 +92,9 @@ export default function OpenSource() {
             }}
           >
             <Typography color="success" fontWeight="xl">
-              Open-source.
+              What Drives My Work
             </Typography>
-            {mobile ? <br /> : " "}
-            Join the{" "}
-            <Typography
-              sx={(theme) => ({
-                ...flickerAnimation,
-                ...(dark
-                  ? {
-                      textShadow: `0 0 1px ${theme.palette.text.primary}, 0 0 .5rem ${theme.palette.text.primary}, 0 0 3rem ${theme.palette.text.secondary}`,
-                      color: "white",
-                      animation: "flicker 5s infinite",
-                      animationDelay: `${Math.random() * 2}s`,
-                      fontWeight: "300",
-                    }
-                  : {
-                      color: theme.palette.text.primary,
-                      fontWeight: "900",
-                      fontFamily: '"Lobster", sans-serif',
-                    }),
-                padding: "3rem",
-                margin: "-3rem",
-              })}
-            >
-              {dark ? "dark side" : "bold side"}
-            </Typography>{" "}
-            of the force.
+            
             <Default>
               <Avatar
                 color="success"
@@ -143,13 +119,42 @@ export default function OpenSource() {
               maxWidth: "500px",
             }}
           >
-            <Typography textColor="text.primary">Collaboration</Typography> and{" "}
-            <Typography textColor="text.primary">
-              community-maintained projects
-            </Typography>{" "}
-            lay the foundation upon which the digital world we live in is built.
-            Any <Typography textColor="text.primary">contribution</Typography>,
-            no matter how small, is and will always be appreciated.
+            <Typography textColor="text.primary">Teamwork</Typography> 
+            <br />
+            Teamwork is crucial in the development for a project. By working together, a team can overcome challenges, share knowledge, and ensure that the final product meets the desired standards. Communication and collaboration are key to success.
+          </Typography>
+          <Typography
+            level="h6"
+            textColor="text.tertiary"
+            sx={{
+              maxWidth: "500px",
+            }}
+          >
+            <Typography textColor="text.primary">Innovation</Typography> 
+            <br />
+            Innovation is the heartbeat of progress-the spark that ignites change and transforms the ordinary into the extraordinary. It’s about daring to dream, pushing boundaries, and embracing the unkonw. Join me in exploring the endless possibilities of innovation, where ideals become reality and curiosity fuels our journey towards a brighter tomorrow.
+          </Typography>
+          <Typography
+            level="h6"
+            textColor="text.tertiary"
+            sx={{
+              maxWidth: "500px",
+            }}
+          >
+            <Typography textColor="text.primary">Creativity</Typography> 
+            <br />
+            Where ideas bloom, perspectives shift. Let’s explore this colorful world tougher, crafting new horizons with every stroke of imagination.
+          </Typography>
+          <Typography
+            level="h6"
+            textColor="text.tertiary"
+            sx={{
+              maxWidth: "500px",
+            }}
+          >
+            <Typography textColor="text.primary">Excellence</Typography> 
+            <br />
+            Excellence is not just a goal-it’s a way of life. It’s the relentless pursuit of perfection, the dedication to surpass expectations. Join me in embracing excellence, where every endeavor is a step towards greatness.
           </Typography>
         </Stack>
         <Parallax
@@ -189,10 +194,11 @@ export default function OpenSource() {
                 : {
                     height: "500px",
                   }),
-              filter:
-                "drop-shadow(0 -20px 20px hsla(185, 74%, 41%, 0.299)) drop-shadow(0 20px 20px hsla(7, 57%, 51%, 0.364))",
+              
             }}
           />
+
+          
         </Parallax>
       </Stack>
     </Stack>

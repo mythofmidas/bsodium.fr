@@ -33,7 +33,7 @@ import { Default, Mobile, useMobileMode } from "@/components/Responsive";
 import Details from "@/components/Details";
 import TypeWriter from "@/components/TypeWriter";
 
-export const categories = ["experience", "education"] as const;
+export const categories = ["experience", "education", "skills"] as const;
 
 export type Category = (typeof categories)[number];
 

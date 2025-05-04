@@ -4,7 +4,7 @@ import details from "@/assets/Details";
 import ProgressiveImage from "@/components/ProgressiveImage";
 import moment from "moment";
 import React, { useEffect } from "react";
-import { BsCode } from "react-icons/bs";
+import { BsCode, BsJustify } from "react-icons/bs";
 import { FiPackage } from "react-icons/fi";
 import { GoOrganization } from "react-icons/go";
 import { IoSchoolOutline } from "react-icons/io5";
@@ -325,6 +325,32 @@ export function Experience({ truncate = false }: { truncate?: boolean }) {
   );
 }
 
+export function Skills({ truncate = false }: { truncate?: boolean }) {
+  return (
+    <Stack gap={1} sx={{
+      justifyContent: "flex-start",
+      alignItems: "flex-start",
+      flexDirection: "row"
+    }} p={2}>
+      {details.skills.map((skill) => 
+          <Chip
+            variant="outlined"
+            color="neutral"
+            size="md"
+            key={skill}
+              sx={(theme) => ({
+                borderColor: theme.palette.divider,
+              })}
+            startDecorator={<Avatar size="sm" src={`/src/assets/svg/${skill}.svg`} />}
+          >
+            {skill}
+          </Chip>
+        )}
+    </Stack>
+  );
+}
+
+
 export default function Details({ category }: { category: Category }) {
   const transRef = useSpringRef();
   const container = React.createRef<HTMLDivElement>();
@@ -360,6 +386,12 @@ export default function Details({ category }: { category: Category }) {
                 <Experience />
               </animated.div>
             );
+            case "skills":
+              return (
+                <animated.div style={style}>
+                  <Skills />
+                </animated.div>
+              );
           default:
             return (
               <animated.div style={style}>

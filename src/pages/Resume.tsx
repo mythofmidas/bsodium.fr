@@ -81,7 +81,6 @@ export default function Resume() {
       <Stack
         alignItems="center"
         sx={{
-          width: "100vw",
           paddingTop: "var(--nav-safe-area-inset-top)",
           paddingBottom: `calc(var(--nav-safe-area-inset-bottom) + 4rem)`,
           paddingLeft: "var(--nav-safe-area-inset-left)",
@@ -105,7 +104,7 @@ export default function Resume() {
                 textColor="text.secondary"
                 marginBottom={0.5}
               >
-                Software Engineer
+                Gifted Developer
               </Typography>
               <Typography
                 component="div"
@@ -139,8 +138,6 @@ export default function Resume() {
                 {[
                   { key: "location", label: "Location" },
                   { key: "email", label: "Email" },
-                  { key: "phone", label: "Phone" },
-                  { key: "website", label: "Website" },
                 ].map(({ key, label }) => {
                   const value =
                     details.contact[key as keyof typeof details.contact];
@@ -189,11 +186,19 @@ export default function Resume() {
                   level="h6"
                   fontWeight="lg"
                   startDecorator={
-                    <Avatar size="sm" alt="Work experience" sx={{borderRadius: ".5rem", height: "1.75rem", width: "1.75rem"}}>
+                    <Avatar
+                      size="sm"
+                      alt="Work experience"
+                      sx={{
+                        borderRadius: ".5rem",
+                        height: "1.75rem",
+                        width: "1.75rem",
+                      }}
+                    >
                       <TbBriefcase />
                     </Avatar>
                   }
-                  slotProps={{ startDecorator: { sx:{ marginRight: 1}}}}
+                  slotProps={{ startDecorator: { sx: { marginRight: 1 } } }}
                 >
                   Work experience
                 </Typography>
@@ -206,11 +211,19 @@ export default function Resume() {
                   level="h6"
                   fontWeight="lg"
                   startDecorator={
-                    <Avatar size="sm" alt="Education" sx={{borderRadius: ".5rem", height: "1.75rem", width: "1.75rem"}}>
+                    <Avatar
+                      size="sm"
+                      alt="Education"
+                      sx={{
+                        borderRadius: ".5rem",
+                        height: "1.75rem",
+                        width: "1.75rem",
+                      }}
+                    >
                       <TbSchool />
                     </Avatar>
                   }
-                  slotProps={{ startDecorator: { sx:{ marginRight: 1}}}}
+                  slotProps={{ startDecorator: { sx: { marginRight: 1 } } }}
                 >
                   Education
                 </Typography>
@@ -225,11 +238,19 @@ export default function Resume() {
                   level="h6"
                   fontWeight="lg"
                   startDecorator={
-                    <Avatar size="sm" alt="Languages" sx={{borderRadius: ".5rem", height: "1.75rem", width: "1.75rem"}}>
+                    <Avatar
+                      size="sm"
+                      alt="Languages"
+                      sx={{
+                        borderRadius: ".5rem",
+                        height: "1.75rem",
+                        width: "1.75rem",
+                      }}
+                    >
                       <TbLanguage />
                     </Avatar>
                   }
-                  slotProps={{ startDecorator: { sx:{ marginRight: 1}}}}
+                  slotProps={{ startDecorator: { sx: { marginRight: 1 } } }}
                 >
                   Languages
                 </Typography>

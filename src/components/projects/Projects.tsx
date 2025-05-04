@@ -13,7 +13,6 @@ export default function Projects() {
   const mobile = useMobileMode();
   return (
     <Stack
-      width="100vw"
       position="relative"
       overflow="hidden"
       sx={{

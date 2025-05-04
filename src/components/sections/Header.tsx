@@ -29,13 +29,6 @@ export default function Header() {
     []
   );
 
-  const currentCompany = useMemo(
-    () =>
-      details.experience.find((experience) => experience.end === "Present") ||
-      undefined,
-    []
-  );
-
   return (
     <Stack
       gap="20px"
@@ -172,7 +165,6 @@ export default function Header() {
         >
           {`${details.name.first} ${details.name.last}`}
         </ATypography>{" "}
-
         . I&apos;m a{" "}
         <Typography textColor="text.primary">Software engineer</Typography>
         &nbsp;
@@ -185,10 +177,10 @@ export default function Header() {
             &nbsp;
           </>
         ) : null} */}
-        and an <Typography textColor="text.primary">AI, Cybersecurity</Typography>{" "}
+        and an{" "}
+        <Typography textColor="text.primary">AI, Cybersecurity</Typography>{" "}
         enthusiast.
         <br />
-        
       </Typography>
     </Stack>
   );

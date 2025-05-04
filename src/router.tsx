@@ -1,6 +1,5 @@
 import { createBrowserRouter, Outlet, RouteObject } from "react-router-dom";
 import AnalyticsBanner from "@/components/AnalyticsBanner";
-import Copyright from "@/components/Copyright";
 import NavigationBar from "@/navigation/NavigationBar";
 import NoMatch from "@/pages/NoMatch";
 

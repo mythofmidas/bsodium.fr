@@ -1,13 +1,12 @@
 import { Avatar, Stack, Typography } from "@mui/joy";
 import {
-  FaDeviantart,
   FaGithub,
   FaGitlab,
   FaLinkedin,
   FaWhatsapp,
   FaTelegramPlane,
 } from "react-icons/fa";
-import { FiMail, FiPhone } from "react-icons/fi";
+import { FiMail } from "react-icons/fi";
 import details from "@/assets/Details";
 import LinkCarousel from "./LinkCarousel";
 import { Default, Mobile, useMobileMode } from "@/components/Responsive";

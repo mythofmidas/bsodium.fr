@@ -1,5 +1,4 @@
-import { Avatar, Stack, Typography, useColorScheme } from "@mui/joy";
-import { useMemo } from "react";
+import { Avatar, Stack, Typography } from "@mui/joy";
 import vader from "@/components/utils/123.svg";
 import vaderMin from "@/components/utils/123.svg";
 import { RiOpenSourceLine } from "react-icons/ri";
@@ -8,27 +7,7 @@ import ProgressiveImage from "@/components/ProgressiveImage";
 import { Default, Mobile, useMobileMode } from "@/components/Responsive";
 
 export default function OpenSource() {
-  const { colorScheme } = useColorScheme();
-  const dark = useMemo(() => colorScheme === "dark", [colorScheme]);
-
   const mobile = useMobileMode();
-
-  const flickerAnimation = useMemo(
-    () => ({
-      "@keyframes flicker": Object.fromEntries(
-        [...Array(10).keys()]
-          .map(() => Math.random() * 100)
-          .sort()
-          .map((p) => [
-            [`${p - 1}%`, { opacity: 1 }],
-            [`${p}%`, { opacity: 0 }],
-            [`${p + 1}%`, { opacity: 1 }],
-          ])
-          .flat()
-      ),
-    }),
-    []
-  );
 
   return (
     <Stack
@@ -94,7 +73,7 @@ export default function OpenSource() {
             <Typography color="success" fontWeight="xl">
               What Drives My Work
             </Typography>
-            
+
             <Default>
               <Avatar
                 color="success"
@@ -119,9 +98,12 @@ export default function OpenSource() {
               maxWidth: "500px",
             }}
           >
-            <Typography textColor="text.primary">Teamwork</Typography> 
+            <Typography textColor="text.primary">Teamwork</Typography>
             <br />
-            Teamwork is crucial in the development for a project. By working together, a team can overcome challenges, share knowledge, and ensure that the final product meets the desired standards. Communication and collaboration are key to success.
+            Teamwork is crucial in the development for a project. By working
+            together, a team can overcome challenges, share knowledge, and
+            ensure that the final product meets the desired standards.
+            Communication and collaboration are key to success.
           </Typography>
           <Typography
             level="h6"
@@ -130,9 +112,14 @@ export default function OpenSource() {
               maxWidth: "500px",
             }}
           >
-            <Typography textColor="text.primary">Innovation</Typography> 
+            <Typography textColor="text.primary">Innovation</Typography>
             <br />
-            Innovation is the heartbeat of progress-the spark that ignites change and transforms the ordinary into the extraordinary. It’s about daring to dream, pushing boundaries, and embracing the unkonw. Join me in exploring the endless possibilities of innovation, where ideals become reality and curiosity fuels our journey towards a brighter tomorrow.
+            Innovation is the heartbeat of progress-the spark that ignites
+            change and transforms the ordinary into the extraordinary. It’s
+            about daring to dream, pushing boundaries, and embracing the unkonw.
+            Join me in exploring the endless possibilities of innovation, where
+            ideals become reality and curiosity fuels our journey towards a
+            brighter tomorrow.
           </Typography>
           <Typography
             level="h6"
@@ -141,9 +128,11 @@ export default function OpenSource() {
               maxWidth: "500px",
             }}
           >
-            <Typography textColor="text.primary">Creativity</Typography> 
+            <Typography textColor="text.primary">Creativity</Typography>
             <br />
-            Where ideas bloom, perspectives shift. Let’s explore this colorful world tougher, crafting new horizons with every stroke of imagination.
+            Where ideas bloom, perspectives shift. Let’s explore this colorful
+            world tougher, crafting new horizons with every stroke of
+            imagination.
           </Typography>
           <Typography
             level="h6"
@@ -152,9 +141,12 @@ export default function OpenSource() {
               maxWidth: "500px",
             }}
           >
-            <Typography textColor="text.primary">Excellence</Typography> 
+            <Typography textColor="text.primary">Excellence</Typography>
             <br />
-            Excellence is not just a goal-it’s a way of life. It’s the relentless pursuit of perfection, the dedication to surpass expectations. Join me in embracing excellence, where every endeavor is a step towards greatness.
+            Excellence is not just a goal-it’s a way of life. It’s the
+            relentless pursuit of perfection, the dedication to surpass
+            expectations. Join me in embracing excellence, where every endeavor
+            is a step towards greatness.
           </Typography>
         </Stack>
         <Parallax
@@ -194,11 +186,8 @@ export default function OpenSource() {
                 : {
                     height: "500px",
                   }),
-              
             }}
           />
-
-          
         </Parallax>
       </Stack>
     </Stack>

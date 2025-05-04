@@ -325,7 +325,8 @@ export function Experience({ truncate = false }: { truncate?: boolean }) {
   );
 }
 
-export function Skills({}: { truncate?: boolean }) {
+export function Skills() {
+  // you can use truncate inside if needed
   return (
     <Stack
       gap={1}

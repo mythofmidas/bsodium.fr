@@ -59,33 +59,296 @@ const details = {
     },
   ],
   skills: [
-    "Linux",
-    "Kotlin",
-    "Jira",
-    "Javascript",
-    "Typescript",
-    "React",
-    "Python",
-    "C++",
-    "Webpack",
-    "MySQL",
-    "AWS",
-    "Azure",
-    "Github",
-    "Laravel",
-    "HTML5",
-    "MongoDB",
-    "NodeJS",
-    "Firebase",
-    "Flutter",
-    "Nginx",
-    "Vue",
-    "Sass",
-    "Django",
-    "C#",
-    "PyTorch",
-    "Tensorflow",
-    "n8n",
+    {
+      name: "Java",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+    },
+    {
+      name: "Python",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    },
+    {
+      name: "C++",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
+    },
+    {
+      name: "C#",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
+    },
+    {
+      name: "Go",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg",
+    },
+    {
+      name: "Rust",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg",
+    },
+    {
+      name: "Ruby",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg",
+    },
+    {
+      name: "Swift",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg",
+    },
+    {
+      name: "Kotlin",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg",
+    },
+    {
+      name: "JavaScript",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    },
+    {
+      name: "TypeScript",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    },
+    {
+      name: "PHP",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+    },
+    {
+      name: "Bash",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg",
+    },
+    {
+      name: "PS",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/powershell/powershell-original.svg",
+    },
+    {
+      name: "HTML",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    },
+    {
+      name: "CSS",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    },
+    {
+      name: "Sass",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+    },
+    {
+      name: "ES6+",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    },
+    {
+      name: "React",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    },
+    {
+      name: "Angular",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
+    },
+    {
+      name: "Vue",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+    },
+    {
+      name: "Next",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    },
+    {
+      name: "Nuxt",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg",
+    },
+    {
+      name: "Node",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    },
+    {
+      name: "Express",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    },
+    {
+      name: "Webpack",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg",
+    },
+    {
+      name: "GraphQL",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+    },
+    {
+      name: "React Native",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    },
+    {
+      name: "Flutter",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
+    },
+    {
+      name: "Django",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
+    },
+    {
+      name: "Flask",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg",
+    },
+    {
+      name: "Laravel",
+      img_url:
+        "https://static-00.iconduck.com/assets.00/laravel-icon-497x512-uwybstke.png",
+    },
+    {
+      name: "Spring Boot",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
+    },
+    {
+      name: ".NET",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg",
+    },
+    {
+      name: "TensorFlow",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+    },
+    {
+      name: "PyTorch",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg",
+    },
+    {
+      name: "FastAPI",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
+    },
+    {
+      name: "MySQL",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+    },
+    {
+      name: "PostgreSQL",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+    },
+    {
+      name: "MariaDB",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg",
+    },
+    {
+      name: "MongoDB",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    },
+    {
+      name: "Redis",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+    },
+    {
+      name: "SQLite",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg",
+    },
+    {
+      name: "Oracle",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg",
+    },
+    {
+      name: "SQL Server",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg",
+    },
+    {
+      name: "Firebase",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+    },
+    {
+      name: "AWS",
+      img_url:
+        "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/amazonaws.svg",
+    },
+    {
+      name: "Azure",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg",
+    },
+    {
+      name: "GCP",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
+    },
+    {
+      name: "Docker",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    },
+    {
+      name: "Kubernetes",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",
+    },
+    {
+      name: "Terraform",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg",
+    },
+    {
+      name: "Jenkins",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg",
+    },
+    {
+      name: "Github",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+    },
+    {
+      name: "GitLab",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg",
+    },
+    {
+      name: "Ansible",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg",
+    },
+    {
+      name: "Nginx",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg",
+    },
+    {
+      name: "Apache",
+      img_url:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg",
+    },
   ],
   experience: [
     {
@@ -221,12 +484,11 @@ const details = {
   contact: {
     location: "Nobi Sad, Serbia",
     email: " mythofmidas@gmail.com",
-    phone: "+33 7 83 79 29 25",
+    phone: "https://t.me/techupgrader",
     website: "https://www.bsodium.fr",
-    linkedin: "https://www.linkedin.com/in/bsodium/",
-    github: "https://www.github.com/bsodium",
-    researchgate: "https://www.researchgate.net/profile/Elliot-Negrel-Jerzy",
-    gitlab: "https://www.gitlab.com/bsodium",
+    linkedin: "https://www.linkedin.com/in/nikolatesla",
+    github: "https://www.github.com/mythofmidas",
+    gitlab: "https://www.gitlab.com/mythofmidas",
     deviantart: "https://www.deviantart.com/bsodium",
   },
 };

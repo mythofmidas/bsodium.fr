@@ -337,22 +337,24 @@ export function Skills() {
       }}
       p={2}
     >
-      {details.skills.map((skill) => (
-        <Chip
-          variant="outlined"
-          color="neutral"
-          size="md"
-          key={skill}
-          sx={(theme) => ({
-            borderColor: theme.palette.divider,
-          })}
-          startDecorator={
-            <Avatar size="sm" src={`/src/assets/svg/${skill}.svg`} />
-          }
-        >
-          {skill}
-        </Chip>
-      ))}
+      <div style={{ display: "flex", flexWrap: "wrap" }}>
+        {details.skills.map((skill, index) => (
+          <div style={{ margin: 4 }}>
+            <Chip
+              variant="outlined"
+              color="neutral"
+              size="md"
+              key={index}
+              sx={(theme) => ({
+                borderColor: theme.palette.divider,
+              })}
+              startDecorator={<Avatar size="sm" src={skill.img_url} />}
+            >
+              {skill.name}
+            </Chip>
+          </div>
+        ))}
+      </div>
     </Stack>
   );
 }
